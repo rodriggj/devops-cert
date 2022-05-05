@@ -1,5 +1,17 @@
 # CloudFormation
 
+## How does it work 
+_Stack Deployment_
+<p align="center">
+    <img width="400" alt="image" src="https://user-images.githubusercontent.com/8760590/167029869-7b0176ac-772a-4309-b9ba-30b3b5cbeeaa.png">
+</p>
+
+_Change Sets_
+<p align="center">
+    <img width="400" alt="image" src="https://user-images.githubusercontent.com/8760590/167030082-728f9743-2c2c-4413-960c-f48584101958.png">
+</p>
+
+
 ## Core Concepts 
 - [ ] Templates
 - [ ] Stacks
@@ -13,6 +25,20 @@
 ## Getting Started 
 
 AWS CloudFormation makes deploying a set of Amazon Web Services (AWS) resources as simple as submitting a template. A `template` is a text file that describes a `stack`, a collection of AWS resources you want to deploy together as a group. You use the template to define all the AWS resources you want in your stack. This can include Amazon Elastic Compute Cloud instances, Amazon Relational Database Service DB Instances, and other resources.  `parameters` can aslo be used within the `stack` to enable you to pass in specific values when you create a stack from a template. `Change Sets` are methods to handle modifications to your `stack`. Instead of delete and redeploying a stack, a `change set` can be used to modify a deployed `stack` configuration. For a list of resource types compatible with AWS CloudFormation, see [here](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+
+The process for the `Getting Started Process` is as follows: 
+1. Pick a Template
+> AWS provides frequenty used templates, you can create net new templates (Designer or Text format), & or you can reuse others templates. 
+
+2. Make sure you have prepared any required items for the stack  
+> Resources are region dependent, ensure you have access to the params, resources, etc. that are referenced in the template. If a reference is made to a resource, parameter, or otherwise that does not exist, the stack build will fail, and a rollback procedure will initate to the previous working state. 
+
+3. Create the stack
+> If 
+
+4. Monitor the progress of stack creation
+5. Use your stack resources
+6. Clean up
 
 ### Template [docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html)
 
