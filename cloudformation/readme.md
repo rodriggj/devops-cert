@@ -8,7 +8,7 @@ _Stack Deployment_
 
 _Change Sets_
 <p align="center">
-    <img width="400" alt="image" src="https://user-images.githubusercontent.com/8760590/167030082-728f9743-2c2c-4413-960c-f48584101958.png">
+    <img width="400" height="300" alt="image" src="https://user-images.githubusercontent.com/8760590/167030082-728f9743-2c2c-4413-960c-f48584101958.png">
 </p>
 
 
