@@ -11,7 +11,6 @@ _Change Sets_
     <img width="400" height="200" alt="image" src="https://user-images.githubusercontent.com/8760590/167030082-728f9743-2c2c-4413-960c-f48584101958.png">
 </p>
 
-
 ## Core Concepts 
 - [ ] Templates
 - [ ] Stacks
@@ -44,7 +43,7 @@ The process for the `Getting Started Process` is as follows:
 
 A template is a declaration of the AWS resources that make up a stack. The template is stored as a text file whose format complies with the JavaScript Object Notation (JSON) or YAML standard. Because they're text files, you can create and edit them in any text editor and manage them in your source control system with the rest of your source code. In the template, you declare the AWS resources you want to create and configure. You declare an object as a name-value pair or a pairing of a name with a set of child objects enclosed.
 
-A template includes six top-level sections: 
+A template includes six top-level sections: [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
 1. AWSTemplateFormatVersion, 
 2. Description, 
 3. Parameters, 
@@ -59,3 +58,12 @@ The Ref function returns the value of the object it refers to.
  - the Ref function can also set a resource's property to the value of another resource
 
 You use `mappings` to declare conditional values that are evaluated in a similar manner as a look up table statement. Outputs define custom values that are returned by the aws cloudformation describe-stacks command and in the CloudFormation console Outputs tab after the stack creation. You can use output values to return information from the resources in the stack, such as the URL for a website that was created in the template.
+
+A resource declaration contains the resource's attributes, which are themselves declared as child objects. A resource must have a Type attribute, which defines the kind of AWS resource you want to create. The Type attribute has a special format:
+
+```s
+AWS::ProductIdentifier::ResourceType
+```
+
+> Resource Reference [here](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html)
+
